@@ -18,3 +18,6 @@ for file in FileArray:
     temp = desktop + "\\" + file + ".encrypted" # Build final path
     f = open(temp,"w")
     f.close()
+
+path = os.path.realpath(desktop)
+os.startfile(path)
